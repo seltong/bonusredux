@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { IState } from 'src/store';
 import { ICartItem } from 'src/store/modules/cart/types';
+import { IState } from 'src/store/types';
 
 const Cart: React.FC = () => {
   const cart = useSelector<IState, ICartItem[]>((state) => state.cart.items);
